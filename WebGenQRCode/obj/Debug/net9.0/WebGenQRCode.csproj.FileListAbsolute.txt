@@ -132,3 +132,5 @@ C:\Users\CODER\Desktop\it\asp net\WebGenQRCode\WebGenQRCode\bin\Debug\net9.0\ru\
 C:\Users\CODER\Desktop\it\asp net\WebGenQRCode\WebGenQRCode\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\CODER\Desktop\it\asp net\WebGenQRCode\WebGenQRCode\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\CODER\Desktop\it\asp net\WebGenQRCode\WebGenQRCode\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CODER\Desktop\it\asp net\WebGenQRCode\WebGenQRCode\bin\Debug\net9.0\Helpers\JsonData\Users.json
+C:\Users\CODER\Desktop\it\asp net\WebGenQRCode\WebGenQRCode\obj\Debug\net9.0\WebGenQRCode.sourcelink.json

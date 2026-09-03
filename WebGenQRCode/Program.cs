@@ -26,7 +26,25 @@ builder.Services.AddSwaggerGen(); //додаємо swagger - кажемо що він є
 
 builder.Services.AddControllers();
 
+const string reactCorsPolicy = "ReactClient";
+
+var reactCorsOrigins = builder.Configuration
+    .GetSection("Cors:AllowedOrigins")
+    .Get<string[]>() ?? Array.Empty<string>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(reactCorsPolicy, policy =>
+    {
+        policy.WithOrigins(reactCorsOrigins)
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
+
+app.UseCors(reactCorsPolicy); //дозволяємо використання cors правил
 
 app.UseSwagger(); //використай swagger
 app.UseSwaggerUI(); //додай граф. інтерфейс

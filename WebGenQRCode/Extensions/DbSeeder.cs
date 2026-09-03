@@ -60,7 +60,7 @@ public static class DbSeeder
                 }
                 catch(Exception ex)
                 {
-                    Console.WriteLine("Виклик помилки при Seed Useras", ex.Message);
+                    Console.WriteLine("Виклик помилки при Seed Useras", ex.Message); //показує помилку
                 }
             }
         }

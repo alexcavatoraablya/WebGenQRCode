@@ -70,6 +70,14 @@
               "target": "Package",
               "version": "[9.0.4, )"
             },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[4.151.1, )"
+            },
+            "SkiaSharp.NativeAssets.Linux": {
+              "target": "Package",
+              "version": "[4.151.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[9.0.6, )"

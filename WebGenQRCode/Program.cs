@@ -25,6 +25,7 @@ builder.Services.AddIdentity<UserEntity, RoleEntity>(options =>
     .AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IImageService, ImageOptimizationService>();
+builder.Services.AddScoped<IJwtTokenService,  JwtTokenService>();
 
 // Add services to the container.
 builder.Services.AddSwaggerGen(); //המהא÷למ swagger - ךאזולמ שמ ג³ם ÷

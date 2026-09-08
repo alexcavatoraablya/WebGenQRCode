@@ -11,7 +11,8 @@ namespace WebGenQRCode.Controllers;
 [Route("api/[controller]/[action]")]
 [ApiController]
 public class AccountController(IImageService imageService,
-    UserManager<UserEntity> userManager) : ControllerBase
+    UserManager<UserEntity> userManager,
+    IJwtTokenService jwtTokenService) : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> Register([FromForm] RegisterModel model)
@@ -43,5 +44,19 @@ public class AccountController(IImageService imageService,
         {
             return BadRequest(new { Error = ex.Message });
         }
+    }
+    //метод для авторизування
+    [HttpPost]
+    public async Task<IActionResult> Login([FromBody] LoginModel model)
+    {
+        var user = await userManager.FindByEmailAsync(model.Email); //асинхронно шукає юзера в базі даних за його email
+        if (user != null && await userManager.CheckPasswordAsync(user, model.Password)) //перевірка паролю
+        {
+            //створення токену і повернення
+            var token = await jwtTokenService.CreateTokenAsync(user);
+            return Ok(new { Token = token });
+        }
+
+        return Unauthorized("Не вірно вказано дані");
     }
 }

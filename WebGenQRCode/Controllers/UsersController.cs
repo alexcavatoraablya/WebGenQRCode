@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebGenQRCode.Data;
@@ -11,6 +12,7 @@ namespace WebGenQRCode.Controllers;
 public class UsersController(AppQrDbContext appQrDbContext) : ControllerBase
 {
     [HttpGet]
+    [Authorize]/**/
     public async Task<IActionResult> GetUsers()
     {
         var users = await appQrDbContext.Users

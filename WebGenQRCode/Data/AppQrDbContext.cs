@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using WebGenQRCode.Data.Entities;
 using WebGenQRCode.Data.Entities.Identity;
 
 namespace WebGenQRCode.Data;
@@ -10,6 +11,8 @@ public class AppQrDbContext : IdentityDbContext<UserEntity, RoleEntity, int>
         : base(options)
     { }
 
+    public DbSet<QrCodeEntity> QrCodes { get; set; }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

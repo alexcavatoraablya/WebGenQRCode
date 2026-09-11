@@ -1,4 +1,4 @@
-﻿namespace WebGenQRCode.Models.Seeder;
+﻿namespace WebGenQRCode.Models.QrCode;
 
 public class SeederQrCodeModel
 {

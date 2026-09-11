@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebGenQRCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b20f3076cdc85ef50acbfa902e971be7646124d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+189d5f571764df15cf8a81235599997e676db42f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebGenQRCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebGenQRCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

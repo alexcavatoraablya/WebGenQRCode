@@ -57,6 +57,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WebGenQRCode.Controllers.QrCodesController",
+    "Method": "GetQrCodes",
+    "RelativePath": "api/QrCodes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebGenQRCode.Controllers.QrCodesController",
+    "Method": "CreateQrCode",
+    "RelativePath": "api/QrCodes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WebGenQRCode.Models.QrCode.CreateQrCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebGenQRCode.Controllers.UsersController",
     "Method": "GetUsers",
     "RelativePath": "api/Users",

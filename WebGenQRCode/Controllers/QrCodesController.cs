@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SkiaSharp;
 using System.Security.Claims;
 using WebGenQRCode.Data;
 using WebGenQRCode.Data.Entities;
@@ -122,5 +123,24 @@ public class QrCodesController(AppQrDbContext appQrDbContext,
         qrCode.IsActive = request.IsActive;
         appQrDbContext.SaveChanges();
         return Ok();
+    }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> SoftDeleteQrCode(int id)
+    {
+        //пошук QR-коду в базі даних (ігноруючи вже видалені, якщо активовано Global Query Filter)
+        var qrCode = await appQrDbContext.QrCodes.FirstOrDefaultAsync(q => q.Id == id);
+
+        if (qrCode == null)
+        {
+            return NotFound(new { message = $"QR-код з ID {id} не знайдено." });
+        }
+
+        //для м'якого видалення
+        qrCode.IsDeleted = true;
+        qrCode.DeletedAt = DateTime.UtcNow; //фіксує час видалення
+
+        await qrCode.SaveChangesAsync();
+
+        return NoContent();
     }
 }

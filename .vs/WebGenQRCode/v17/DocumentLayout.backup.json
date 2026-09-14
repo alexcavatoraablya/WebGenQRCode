@@ -126,8 +126,7 @@
               "RelativeToolTip": "WebGenQRCode\\Models\\QrCode\\UpdateQrCodeRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T08:10:38.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-14T08:10:38.616Z"
             },
             {
               "$type": "Document",
@@ -139,8 +138,7 @@
               "RelativeToolTip": "WebGenQRCode\\Controllers\\QrCodesController.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAuwHoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T07:45:09.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T07:45:09.497Z"
             },
             {
               "$type": "Document",
@@ -152,8 +150,7 @@
               "RelativeToolTip": "WebGenQRCode\\Helpers\\JsonData\\Users.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-03T06:18:28.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-03T06:18:28.526Z"
             },
             {
               "$type": "Document",
@@ -163,7 +160,7 @@
               "RelativeDocumentMoniker": "WebGenQRCode\\Data\\Entities\\Identity\\QrCodeEntity.cs",
               "ToolTip": "C:\\Users\\CODER\\Desktop\\it\\aspnet\\WebGenQRCode\\WebGenQRCode\\Data\\Entities\\Identity\\QrCodeEntity.cs",
               "RelativeToolTip": "WebGenQRCode\\Data\\Entities\\Identity\\QrCodeEntity.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-10T07:08:50.641Z",
               "EditorCaption": ""
@@ -178,8 +175,7 @@
               "RelativeToolTip": "WebGenQRCode\\Models\\QrCode\\QrCodeStateModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T07:50:27.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-14T07:50:27.843Z"
             },
             {
               "$type": "Document",
@@ -191,8 +187,7 @@
               "RelativeToolTip": "WebGenQRCode\\Models\\QrCode\\CreateQrCodeRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T07:39:38.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T07:39:38.888Z"
             },
             {
               "$type": "Document",

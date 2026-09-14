@@ -31,4 +31,10 @@ public class QrCodeEntity
 
     //Скільки разів було здійснено сканування коду
     public int ScanCount { get; set; }
+    public DateTime DeletedAt { get; internal set; }
+
+    internal async Task SaveChangesAsync()
+    {
+        throw new NotImplementedException();
+    }
 }
